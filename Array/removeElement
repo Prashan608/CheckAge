@@ -1,0 +1,17 @@
+function removeDuplicate(arr){
+    let j = 0;
+    let s = new Set();
+ for(let i = 0;i<arr.length;i++){
+    if(!s.has(arr[i])){
+        s.add(arr[i]);
+        arr[j] = arr[i];
+        j++;
+    }
+ }
+ return j;
+}
+arr = [1, 2, 2, 3, 4, 3, 5]
+let temp = removeDuplicate(arr);
+for(let i = 0;i<temp;i++){
+    console.log(arr[i]);
+}
