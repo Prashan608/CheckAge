@@ -8,11 +8,11 @@ function findtarget(arr,k){
   if(sum==k){
     return true;
   }
-  else if(sum>k){
-    r--;
+  else if(sum<k){
+    l--;
   }
   else{
-    l++;
+    r++;
   }
  }
  return false;
