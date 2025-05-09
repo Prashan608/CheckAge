@@ -1,0 +1,8 @@
+function printDecrease(n){
+ if(n==0)return;
+ console.log(n);
+ printDecrease(n-1);
+}
+
+let n = 5;
+printDecrease(n);
