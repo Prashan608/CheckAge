@@ -16,5 +16,5 @@ push(10);
 push(15);
 push(20);
 push(25);
-// it give stackover flow error
+// it gives stackover flow error
 push(30)
